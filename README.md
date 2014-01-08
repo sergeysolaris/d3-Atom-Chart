@@ -7,7 +7,7 @@ Atom like chart based on d3.js
 Usage example
 =============
 
-<script type="text/javascript">
+<code><script type="text/javascript">
 	var skillsChart = [{"label":"HTML"}, {"label":"CSS"}, {"label":"PHP"}, {"label":"Unity3D"}, {"label":"jQuery"}, {"label":"d3"}, {"label":"C#"}, {"label":"MYSQL"}, {"label":"SVG"}]; 
 
 	var skills = new atomChart(
@@ -43,4 +43,4 @@ Usage example
 	
 
 	skills.draw();
-</script>
+</script></code>
