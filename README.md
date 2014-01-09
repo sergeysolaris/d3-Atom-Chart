@@ -8,7 +8,9 @@ Usage example
 =============
 
 <code>
-	var skillsChart = [{"label":"HTML"}, {"label":"CSS"}, {"label":"PHP"}, {"label":"Unity3D"}, {"label":"jQuery"}, {"label":"d3"}, {"label":"C#"}, {"label":"MYSQL"}, {"label":"SVG"}]; 
+	var skillsChart = [{"label":"HTML"}, {"label":"CSS"}, {"label":"PHP"}, 
+		{"label":"Unity3D"}, {"label":"jQuery"}, {"label":"d3"}, {"label":"C#"},
+		{"label":"MYSQL"}, {"label":"SVG"}]; 
 
 	var skills = new atomChart(
 			{
@@ -22,7 +24,7 @@ Usage example
 					height: 700
 				},
 
-				proton : {
+				core : {
 					radius : 150,
 					imgUrl : "http://serg.im/images/logo.svg"
 				},
