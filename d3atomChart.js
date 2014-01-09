@@ -9,8 +9,8 @@ var atomChart = function (params) {
 		var canva = d3.select(chart.settings.canvasEl);
 
 		var svg = canva.append("svg")
-									.attr("width", chart.settings.canva.width)
-									.attr("height", chart.settings.canva.height);
+						.attr("width", chart.settings.canva.width)
+						.attr("height", chart.settings.canva.height);
 		var centerX = chart.settings.canva.width / 2;
 		var centerY = chart.settings.canva.height / 2;
 
@@ -18,11 +18,11 @@ var atomChart = function (params) {
 		svg.append("g").attr("class", "g-chart-container");
 
 		d3.select(".g-chart-container").append("svg:image")
-			.attr("xlink:href", chart.settings.proton.imgUrl)
-			.attr("width", chart.settings.proton.radius)
-			.attr("height", chart.settings.proton.radius)
-			.attr("x", centerX - chart.settings.proton.radius / 2)
-			.attr("y", centerY - chart.settings.proton.radius / 2);
+			.attr("xlink:href", chart.settings.core.imgUrl)
+			.attr("width", chart.settings.core.radius)
+			.attr("height", chart.settings.core.radius)
+			.attr("x", centerX - chart.settings.core.radius / 2)
+			.attr("y", centerY - chart.settings.core.radius / 2);
 
 		var angleDelta = Math.round(360/chart.settings.data.length);
 		
