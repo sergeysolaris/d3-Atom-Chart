@@ -9,8 +9,8 @@ var atomChart = function (params) {
 		var canva = d3.select(chart.settings.canvasEl);
 
 		var svg = canva.append("svg")
-						.attr("width", chart.settings.canva.width)
-						.attr("height", chart.settings.canva.height);
+						.attr("viewBox", "0 0 " + chart.settings.canva.width + " " + chart.settings.canva.height)
+						.attr("transform", "scale(-1, -1)");
 		var centerX = chart.settings.canva.width / 2;
 		var centerY = chart.settings.canva.height / 2;
 
